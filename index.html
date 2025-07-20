@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular</h1>
+    <p>Ingeniería Civil en Computación</p>
+    <p>────୨ৎ────</p>
+  </header>
+
+  <main class="malla-horizontal">
+
+    <!-- Nivel 1 -->
+    <section class="nivel">
+      <h2>Nivel 1</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="intro_prog">Intro a la Programación</button>
+        <button class="ramo" data-id="intro_icc">Intro a la ICC</button>
+        <button class="ramo" data-id="teoria_sistemas">Teoría de Sistemas</button>
+        <button class="ramo" data-id="intro_mate">Intro a la Matemática</button>
+        <button class="ramo" data-id="comunicacion1">Comunicación Oral I</button>
+        <button class="ramo" data-id="idioma1">Idioma Extranjero I</button>
+      </div>
+    </section>
+
+    <!-- Nivel 2 -->
+    <section class="nivel">
+      <h2>Nivel 2</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="pensamiento_comp" data-prereq="intro_prog">Pensamiento Computacional</button>
+        <button class="ramo" data-id="interfaces_hc" data-prereq="intro_prog">Interfaces Humano Computador</button>
+        <button class="ramo" data-id="algebra" data-prereq="intro_mate">Álgebra</button>
+        <button class="ramo" data-id="calculo1" data-prereq="intro_mate">Cálculo I</button>
+        <button class="ramo" data-id="comunicacion2" data-prereq="comunicacion1">Comunicación Oral II</button>
+        <button class="ramo" data-id="idioma2" data-prereq="idioma1">Idioma Extranjero II</button>
+        <button class="ramo" data-id="deporte1">Deporte I</button>
+      </div>
+    </section>
+
+     <!-- Nivel 3 -->
+    <section class="nivel">
+      <h2>Nivel 3</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="lenguaje_paradigma" data-prereq="intro_prog">Lenguajes y Paradigmas de Programación</button>
+        <button class="ramo" data-id="prog_avanzada" data-prereq="pensamiento_comp">Programación Avanzada</button>
+        <button class="ramo" data-id="algebra_lineal" data-prereq="algebra">Álgebra Lineal</button>
+        <button class="ramo" data-id="calculo2" data-prereq="calculo1">Cálculo II</button>
+        <button class="ramo" data-id="autogestion" data-prereq="comunicacion2">Autogestión del Aprendizaje</button>
+        <button class="ramo" data-id="idioma3" data-prereq="idioma2">Idioma Extranjero III</button>
+      </div>
+    </section>
+         <!-- Nivel 4 -->
+    <section class="nivel">
+      <h2>Nivel 4</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="proyecto_prog" data-prereq="prog_avanzada" data-prereq="interfaces_hc">Proyecto de Programación</button>
+        <button class="ramo" data-id="alg_estructura" data-prereq="algebra" data-prereq="pensamiento_comp">Algoritmos y Estructuras de Datos</button>
+        <button class="ramo" data-id="modelos_discretos" data-prereq="algebra_lineal" data-prereq="teoria_sistemas">Modelos Discretos</button>
+        <button class="ramo" data-id="prob_estadisticas" data-prereq="calculo2" data-prereq="algebra_lineal">Probabilidades y Estadisticas</button>
+        <button class="ramo" data-id="trabajo_equipo" data-prereq="autogestion">Trabajo en Equipo y Desarrollo de Habilidades Sociales</button>
+        <button class="ramo" data-id="idioma4" data-prereq="idioma3">Idioma Extranjero IV</button>
+        <button class="ramo" data-id="deporte2">Deporte II</button>
+      </div>
+    </section>
+         <!-- Nivel 5 -->
+    <section class="nivel">
+      <h2>Nivel 5</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="req_software" data-prereq="prog_avanzada">Requisitos de Software</button>
+        <button class="ramo" data-id="metd" data-prereq="proyecto_prog">Metodologias de Desarollo y Planificacion de Proyectos de Software</button>
+        <button class="ramo" data-id="diseño_datos" data-prereq="proyecto_prog">Diseño de Base de Datos</button>
+        <button class="ramo" data-id="fisica" data-prereq="intro_mate">Fisica General</button>
+        <button class="ramo" data-id="ecuaciones" data-prereq="calculo2" data-prereq="algebra_lineal">Ecuaciones Diferenciales</button>
+        <button class="ramo" data-id="contextos" data-prereq="comunicacion2">Comprensión de Contextos Sociales</button>
+        <button class="ramo" data-id="idioma5" data-prereq="idioma4">Idioma Extranjero V</button>
+      </div>
+    </section>
+         <!-- Nivel 6 -->
+    <section class="nivel">
+      <h2>Nivel 6</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="diseño_soft" data-prereq="metd" data-prereq="req_software">Diseño de Software</button>
+        <button class="ramo" data-id="arq" data-prereq="teoria_sistemas" data-prereq="intro_prog">Arquictectura de Computadores y Diseño de Circuitos Digitales</button>
+        <button class="ramo" data-id="maq" data-prereq="modelos_discretos">Maquinas Abstractas y Lenguajes Formales</button>
+        <button class="ramo" data-id="electro" data-prereq="fisica" data-prereq="calculo2">Electricidad y Magnetismo</button>
+        <button class="ramo" data-id="contextos2" data-prereq="contextos">Comprensión de Contextos Culturales</button>
+        <button class="ramo" data-id="idioma6" data-prereq="idioma5">Idioma Extranjero VI</button>
+      </div>
+    </section>
+         <!-- Nivel 7 -->
+    <section class="nivel">
+      <h2>Nivel 7</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="construccion" data-prereq="diseño_soft">Pensamiento Computacional</button>
+        <button class="ramo" data-id="so" data-prereq="arq">Sistemas Operativos</button>
+        <button class="ramo" data-id="redes" data-prereq="arq">Redes de Computadores</button>
+        <button class="ramo" data-id="gestion_datos" data-prereq="diseño_datos">Gestión de Base de Datos I</button>
+        <button class="ramo" data-id="admin" data-prereq="deporte2" data-prereq="idioma4" data-prereq="trabajo_equipo" data-prereq="prob_estadisticas" data-prereq="modelos_discretos" data-prereq="alg_estructura" data-prereq="proyecto_prog">Fundamentos de Programación</button>
+        <button class="ramo" data-id="etica" data-prereq="contextos2" data-prereq="trabajo_equipo">Etica y Responsabilidad Social</button>
+      </div>
+    </section>
+     <!-- Nivel 8 -->
+    <section class="nivel">
+      <h2>Nivel 8</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="sistemas_distribuidos" data-prereq="redes" data-prereq="so" >Sistemas Distribuidos</button>
+        <button class="ramo" data-id="ia" data-prereq="lenguaje_paradigma">Inteligencia Artificial</button>
+        <button class="ramo" data-id="admin_redes" data-prereq="redes" data-prereq="so">Administracion de Redes y Sistemas Computacionales</button>
+        <button class="ramo" data-id="Electivo1" >Electivo I</button>
+        <button class="ramo" data-id="ing_eco" data-prereq="admin">Ingenieria Economica y Evaluacion de Proyectos</button>
+        <button class="ramo" data-id="responsabilidad" data-prereq="etica">Responsabilidad Social</button>
+      </div>
+    </section>
+         <!-- Nivel 9 -->
+    <section class="nivel">
+      <h2>Nivel 9</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="taller_soft" data-prereq="construccion">Taller Desarrollo de Software</button>
+        <button class="ramo" data-id="seguridad_informatica" data-prereq="admin_redes" data-prereq="construccion">Seguridad Informatica</button>
+        <button class="ramo" data-id="electivo2" >Electivo II</button>
+        <button class="ramo" data-id="gestion_proyectos" data-prereq="ing_eco">Gestión de Proyectos Tecnologicos</button>
+        <button class="ramo" data-id="gestion_recursos" data-prereq="admin">Gestión de Recursos Humanos</button>
+      </div>
+    </section>
+     <!-- Nivel 10 -->
+    <section class="nivel">
+      <h2>Nivel 10</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="gestio_inno" data-prereq="ing_eco">Gestión de Innovación y Emprendimiento</button>
+        <button class="ramo" data-id="electivo3" >Electivo III</button>
+        <button class="ramo" data-id="form_titulo">Formulación de Proyecto de Titulación</button>
+      </div>
+    </section>
+         <!-- Nivel 11 -->
+    <section class="nivel">
+      <h2>Nivel 11</h2>
+      <div class="ramo-lista">
+        <button class="ramo" data-id="electivo4" >Electivo IV</button>
+        <button class="ramo" data-id="proyecto_titulacion" >Proyecto Titulación</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
